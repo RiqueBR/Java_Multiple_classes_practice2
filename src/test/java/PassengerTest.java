@@ -29,8 +29,4 @@ public class PassengerTest {
         assertEquals(2, passenger2.getNumOfBags());
     }
 
-    @Test
-    public void getWeightOfBaggage() {
-        assertEquals(10, passenger2.totalWeightOfBags(2, flightManager));
-    }
 }

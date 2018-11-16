@@ -10,7 +10,9 @@ public class FlightManager {
     }
 
 
-    public int averageWeight() {
-        return plane.getPlaneCapacity()/passenger.numOfBags;
+    public int baggageWeightAllowed() {
+        return plane.getPlaneWeight()/2;
     }
+
+
 }

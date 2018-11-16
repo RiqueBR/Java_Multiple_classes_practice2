@@ -22,6 +22,6 @@ public class Passenger {
     }
 
     public int totalWeightOfBags(int numOfBags, FlightManager flightManager){
-        return numOfBags * flightManager.averageWeight(); // weight of a single bag is 5kg
+        return numOfBags * flightManager.baggageWeightAllowed();  // weight of a single bag in kg
     }
 }

@@ -3,6 +3,8 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
+import static org.junit.Assert.assertEquals;
+
 public class FlightManagaerTest {
 
     Passenger passenger1;
@@ -21,8 +23,17 @@ public class FlightManagaerTest {
         airCodeClan1 = new Plane(PlaneType.BOEING747);
         flight1 = new Flight("GRU217", "SAO PAULO", "1700");
         bookedPassengers = new ArrayList<Passenger>();
-//        flightManager = new FlightManager();
+        flightManager = new FlightManager(flight1, passenger2, airCodeClan1);
+        bookedPassengers.add(passenger1);
+        bookedPassengers.add(passenger2);
+        bookedPassengers.add(passenger3);
+
+
     }
 
+    @Test
+    public void getWeightOfBaggage() {
+        assertEquals(10, flightManager.baggageWeightAllowed());
+    }
 
 }

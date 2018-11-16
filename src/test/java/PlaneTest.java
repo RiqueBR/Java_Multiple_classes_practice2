@@ -21,12 +21,12 @@ public class PlaneTest {
 
     @Test
     public void canInformOnPlanesCapacity() {
-    assertEquals(200, airCodeClan2.getPlaneCapacity());
+    assertEquals(10, airCodeClan2.getPlaneCapacity());
     }
 
 
     @Test
     public void canInformOnPlanesWeight(){
-        assertEquals(100, airCodeClan1.getPlaneWeight());
+        assertEquals(10, airCodeClan1.getPlaneWeight());
     }
 }
